@@ -23,5 +23,6 @@
 
 
 ##關於使用程式碼自行載入
+
 app key與app secret請自行到 https://www.plurk.com/PlurkApp/create 申請。填入appconfig.js的對應參數。
 chrome使用需注意： 請把manifest裡面的"browser_specific_settings"與"background"兩個參數註解，即可通過安裝檢查。
