@@ -1,0 +1,59 @@
+
+.pem-btn
+{
+    white-space: nowrap;
+    display: inline-block;
+    height: auto;
+    color: white;
+    background: #FF574D;
+    /*float: right;*/
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: 1.5em;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    padding-right: 1em;
+    padding-bottom: 0.2em;
+    /*font-size: 25px;*/
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+
+.pem-emoticons-holder
+{
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #F9F9FD;
+    margin-right: -50px;
+    padding-right: 50px;
+}
+
+.pem-emoticons-holder ul li
+{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    padding: 2px;
+    margin: 1px;
+    white-space: nowrap;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.pem-emoticons-holder ul li img
+{
+    max-width: 48px;
+    max-height: 48px;
+    vertical-align: middle;
+}
+
+.pem-icon
+{
+    background: url();
+}

@@ -1,0 +1,47 @@
+{
+  "manifest_version": 3,
+  "name": "Plurk Custom EmotionIcon",
+  "version": "1.22",
+  "description": "Plurk Custom EmotionIcon",
+  "icons" : {
+    "48": "icons/icon.gif"
+  },
+
+// note: "browser_specific_settings property" is firefox only. remark it for chrome release.
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pem@giga.mine",
+      "strict_min_version": "109.0"
+    }
+  },
+
+  "optional_permissions": [
+    "downloads"  //this item only accept in "optional_permissions"
+  ],
+  "action" : {
+    "default_icon": "icons/icon.gif",
+    "default_title": "允許儲存檔案權限"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.plurk.com/*"],
+      "js": ["appconfig.js", "main.js", "oauth-signature.min.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  // note: "background" property is firefox only. remark it for chrome release.
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+//  "options_ui": {
+//    "page": "options.html"
+//  },
+  "web_accessible_resources" : [
+    {
+      "resources": [ "icons/icon.gif" ],
+      "matches": ["*://*.plurk.com/*"]
+    }
+  ]
+
+}
