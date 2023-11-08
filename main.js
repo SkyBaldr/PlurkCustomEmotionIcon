@@ -36,7 +36,7 @@
     let sigMethod = 'HMAC-SHA1';
     let oauthVer = '1.0';
 
-    let PemIcon = 'data:image/gif;base64,R0lGODlhMAAwAOfKAFKK/p7G9oKi6Gme/tLa/maO5I627rra8tPu/maW706S/uru/ZKq5n6q7rbG9qa69nae7Iau73KW6ur6/lqS8pq+8nae9KrG9M3m/GKG/oKq8LbS+fb6/K3O+XaS7sra8maW+NLm+2aK8pq28mKa/d7u/VqS/oqu7XKW83mm87DC9d7m+/76/cji+uH2/HKm/qTC8LLG9cLW+Yum726e7Y62+V6O8Yai9laS9nqm6m6W+m6e+s7a+meS9GKS+Yuu95Ky8H6e8trm/FqO9G6S6m6W7/b2/qzG+r7S+fn+9ebu+36e652+/Iqq8Xqa9ISm6WaO6rfO83ai9bLO8l6O/ez2/nqa5fL6/sje9Waa+9Lq+XSa9arC9Za26MLa+3yq+WKS6oKq/VyW/W6i+FKW9aW++3qi4pq29uHy/Yqy8n6m+pa2+puy9bLO/NLi/YKu/J7C8arK9m6O8qTC+FaW9W6S8vn+/YOm8FKO/WiS5Wqa73Ka6+3+/brW+WeO9N/q/Nr2/qbG9JKu9dru/ub2/srW9lqK/c7i+5Wy9/72/tri+/7+9rLK9W6a577W9Ja68sLe8mKW7pK68rbK+KK+9V6W7s7q9l6K/Jy67HKi8JK6+oKm+PL2/pq6+Yay9ury/q7S+uL6/oyy+KzK/J3C+meS7H2u+L3a+5Ku7Hee+8fa/Hmm+26a+c7e+2eS/GKW+36i9Nrq+uby/Y6q+rfO/LLS9Mfe+3Oa+lGW+3mi65a692eO/KbK9tLe/H6i6/L+/rLS/dry/ub6/lqO/oKi8FaS/Xqa65a28WKS8VaW/P7+/rLK+26a777W+8Le+6LG7mqO4pK28GqW71KS/Xqe7F6S8p6+8q7G9Yaq8LrS+fr6+2qW+dbm/OLu/l6S/I6u8XaW8+Lm+sbW+nKe8JK2+GKO736m63Ke+Zay8vr29nqi9mKO+mqa+9bq94aq9nKi+46y7tbi9oau967K8VaO/Xaa7brK+6a+9GKK+4am956691aK+naW7P7+/v7+/v7+/iH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggR0lNUCBvbiBhIE1hYwAh+QQFCgD/ACwAAAAAMAAwAAAI/gD/CRxIsCDBYggTKjTIsKHDggojSiz2sKLDiRgjbrHIMaPHiBwvfhy5MORBkigRmhSYsmWxCCFduvxhUWaxeN1SVrRpR5kyOzob2izWU9kiDEENDi3m02fSk0ObKmupNGrTXy1vQZUpFajLrS2lGpU5cGgSsVPJ/rPJb5HYoSxlskCLdhHJf1BkCqPLN+1SsViZ9qW7FCFaw4PFJiksWCrixGMZN276GPJPxocnQ/b6963mxHYLZ7bsVPJo0spKYfaM2q/HtRlPQ0YZF6Ps2SNrT7w9OPTHsrZZ484NXLLa4sZpQ0z+FDnzjEKf/44ufeLO6iBrYlcZE/tK2M+/E+uWLB6szfIM4aIXqXy9dozlAwIAIfkEAQoA/wAsEwAHAA4ACwAACDEAiwkcSLCgwYMIEypcqEzZwlOLFjlM2LChQVOfFrGoOFHgFY4cCbLQBtLiQIklCwYEADs=';
+    let PemIcon = 'data:image/png;base64,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';
 
     let trdLicText = 'oauth-signature\n' +
         'https://github.com/bettiolo/oauth-signature-js\n' +
@@ -408,20 +408,42 @@
         if (debug) console.log('oauthTokenFromUrl=' , oauthTokenFromUrl , ', oauthVerifier=' , oauthVerifier);
         if (debug) console.log('oauth_temp_token=' , oauth_temp_token , ', oauth_temp_token_secret=' , oauth_temp_token_secret);
 
-        let plurkFormNodes = attrsearch(null, 'div', 'class', 'plurkForm');
         let iconsHolderNodes;
+        let iconsHolderNode;
+        let itemContainerNodes;
+        let itemContainerNode;
+
+        let plurkFormNodes = attrsearch(null, 'div', 'class', 'plurkForm');
         if (plurkFormNodes && plurkFormNodes.snapshotLength > 0)
         {
             iconsHolderNodes = attrsearch(plurkFormNodes.snapshotItem(0), 'ul', 'class', 'icons_holder');
+
+            if (iconsHolderNodes && iconsHolderNodes.snapshotLength > 0)
+            {
+                iconsHolderNode = iconsHolderNodes.snapshotItem(0);
+            }
         }
 
-        let iconsHolderNode;
-        if (iconsHolderNodes && iconsHolderNodes.snapshotLength > 0)
+
+
+        if (!iconsHolderNode) //plurk form not found. put icon in somewhere...
         {
-            iconsHolderNode = iconsHolderNodes.snapshotItem(0);
+            let plurkTopBarNodes = attrsearch(null, 'div', 'id', 'top-bar-user');
+            if (plurkTopBarNodes && plurkTopBarNodes.snapshotLength > 0)
+            {
+                itemContainerNodes = attrsearch(plurkTopBarNodes.snapshotItem(0), 'ul', 'class', 'item-container');
+
+                if (itemContainerNodes && itemContainerNodes.snapshotLength > 0)
+                {
+                    itemContainerNode = itemContainerNodes.snapshotItem(0);
+                }
+            }
         }
-        if (!iconsHolderNode)  //maybe plurk layout not rendered.
+
+        if (!iconsHolderNode && !itemContainerNode)  //maybe plurk layout not rendered.
             return;
+
+
 
         if (!customFeatureIcon)  //find first to prevent double add
             customFeatureIcon = document.getElementById(customFeatureIconId);
@@ -433,7 +455,11 @@
             //customFeatureIcon.style.height = '32px';
             //customFeatureIcon.className = 'pem-icon';
             //customFeatureIcon.textContent = 'aaaa';
-            iconsHolderNode.appendChild(customFeatureIcon);
+
+            if (iconsHolderNode)
+                iconsHolderNode.appendChild(customFeatureIcon);
+            else if (itemContainerNode)
+                itemContainerNode.appendChild(customFeatureIcon);
 
             const customFeatureImgIcon = document.createElement('img');
             customFeatureImgIcon.src = PemIcon;
@@ -1380,6 +1406,8 @@
     function handleSaveEmoticonBackupFile(ev) {
         ev.preventDefault();
         let data = JSON.parse(window.localStorage.getItem(PemBackupEmotIconListId));
+
+
         if (Array.isArray(data) && data.length > 0)
         {
             if (window.showSaveFilePicker)  //chrome style file save
@@ -1411,7 +1439,7 @@
 
                 const sending = browser.runtime.sendMessage({
                     action: 'data',
-                    data: data
+                    data: JSON.stringify(data, null, 2)
                 });
 
                 sending.then((res) => {

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Plurk Custom EmotionIcon",
-  "version": "1.22",
-  "description": "Plurk Custom EmotionIcon",
+  "version": "1.24",
+  "description": "Plurk Custom EmotionIcon add / remove / collect",
   "icons" : {
     "48": "icons/icon.gif"
   },
@@ -19,7 +19,7 @@
     "downloads"  //this item only accept in "optional_permissions"
   ],
   "action" : {
-    "default_icon": "icons/icon.gif",
+    "default_icon": "icons/icon.png",
     "default_title": "允許儲存檔案權限"
   },
   "content_scripts": [
@@ -39,7 +39,7 @@
 //  },
   "web_accessible_resources" : [
     {
-      "resources": [ "icons/icon.gif" ],
+      "resources": [ "icons/icon.gif", "icons/icon.png" ],
       "matches": ["*://*.plurk.com/*"]
     }
   ]
